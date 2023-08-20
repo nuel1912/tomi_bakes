@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #D2B48C;
+}
+body::-webkit-scrollbar {
+    width: 0%;
+}
+hr {
+    background: #5c1600;
+    width: 80%;
+    height: 5px;
+    margin: auto;
+    border: 0;
+}
+nav {
+    background: #F5F5DC;
+}
+/* .nav-link {
+    color: #5c1600;
+} */
+.navbar-nav {
+    margin-left: 68%;
+}
+.nav-link:hover {
+    font-weight: 800;
+} 
+.dropdown-item:hover {
+    font-weight: 800;
+} 
+header {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    /* padding: 20px 0; */
+    position: relative;
+    overflow: hidden;
+}
+/* .part {
+    width: 90%;
+    margin: auto;
+} */
+
+.text-box {
+    width: 90%;
+    color: #F5F5DC;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* z-index: 20; */
+}
+.text-box h1 {
+    font-size: 75px;
+}
+.text-box span {
+    /* background: #F5F5DC; */
+    color: #D2B48C;
+    font-weight: 700;
+    /* padding: 0 10px; */
+}
+.text-box p {
+    margin: 5px 0 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.hero-btn {
+    /* display: inline-block; */
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #D2B48C;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 12px 35px;
+    font-size: 15px;
+    background: transparent;
+    /* position: relative; */
+    cursor: pointer;
+    transition: 1s;
+}
+.hero-btn:hover {
+    font-weight: 700;
+    border: 0;
+    color: #451400;
+    background: #D2B48C;
+}
+
+.container {
+    width: 90%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 30px 0;
+}
+.container h1 {
+    color: #451400;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.container p {
+    color: #F5F5DC;
+    font-weight: 600;
+}
+.container p span {
+    color: #451400;
+}
+.row {
+    margin: 5px 0;
+}
+.pro-col {
+    margin: 5px 10px;
+    border: 2px solid #F5F5DC;
+    padding: 0;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    /* background: #641e02; */
+}
+.cus-col {
+    border-radius: 10px;
+    margin: 5px;
+    text-align: left;
+    background: rgba(69,20,0,0.2);
+    padding: 20px;
+    display: flex;
+}
+.cus-col .peeps {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.cus-col h5 {
+    color: #451400;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.cus-col p {
+    font-size: 14px;
+    padding: 0;
+}
+.rating img {
+    width: 15px;
+}
+
+.cta {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(img/cake.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 50vh;
+    margin: 100px auto;
+    position: relative;
+}
+.cta .order {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    text-align: center;
+}
+.order h5 {
+    font-size: 25px;
+    color: #F5F5DC;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.foot {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    /* background-color: #451400; */
+    padding: 20px 5px;
+}
+.foot h6 {
+    font-size: 24px;
+    color: #451400;
+    font-weight: 700;
+}
+.foot p {
+    color: #451400;
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+    /* font-size: 18px; */
+}
+/* .foot .socials {
+    display: flex;
+} */
+.socials img {
+    width: 20px;
+    margin: 10px 3px;
+}   
+
+
+
+
+
+
+
+/* .programmes {
+    color: #5c1600;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+.programmes h1 {
+    font-weight: 800;
+    font-size: 25px;
+}
+.programmes p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+}
+.row {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.pro-col {
+    flex-basis: 24%;
+    background: rgba(92,22,0,0.5);
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s
+}
+.pro-col h3 {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.pro-col p {
+    color: #fff;
+}
+.pro-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+} */
+
+
+
+@media (max-width:768px) {
+    header {
+        height: 100vh;
+        width: 100%;
+        background-image: url(img/cake.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .navbar-nav {
+        margin-left: 0;
+    }
+    .bg {
+        display: none;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
