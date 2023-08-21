@@ -54,7 +54,7 @@ header {
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    /* z-index: 20; */
+    z-index: 20;
 }
 .text-box h1 {
     font-size: 75px;
