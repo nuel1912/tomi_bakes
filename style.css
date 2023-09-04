@@ -21,10 +21,15 @@ hr {
 nav {
     background: #F5F5DC;
 }
+.navbar-brand {
+    margin: auto 2%;
+}
 /* .nav-link {
     color: #5c1600;
 } */
 .navbar-nav {
+    /* margin-left: 68%; */
+    /* margin: auto 25px; */
     margin-left: 68%;
 }
 .nav-link:hover {
@@ -73,8 +78,8 @@ header {
 .hero-btn {
     /* display: inline-block; */
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #D2B48C;
+    color: #F5F5DC;
+    border: 1px solid #F5F5DC;
     letter-spacing: 1px;
     border-radius: 5px;
     padding: 12px 35px;
@@ -152,24 +157,27 @@ header {
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(img/cake.jpg);
     background-position: center;
     background-size: cover;
-    width: 80%;
+    width: 90%;
     height: 50vh;
     margin: 100px auto;
+    text-align: center;
+    padding: 100px 0;
     position: relative;
 }
 .cta .order {
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    width: 80%;
     margin: auto;
-    text-align: center;
 }
 .order h5 {
-    font-size: 25px;
+    font-size: 35px;
     color: #F5F5DC;
     margin-bottom: 25px;
     line-height: 1.4;
+    font-weight: 600;
 }
 
 .foot {
@@ -199,57 +207,6 @@ header {
 }   
 
 
-
-
-
-
-
-/* .programmes {
-    color: #5c1600;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 50px 0;
-}
-.programmes h1 {
-    font-weight: 800;
-    font-size: 25px;
-}
-.programmes p {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 10px;
-}
-.row {
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-between;
-}
-.pro-col {
-    flex-basis: 24%;
-    background: rgba(92,22,0,0.5);
-    border-radius: 10px;
-    margin: 10px 0;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s
-}
-.pro-col h3 {
-    color: #fff;
-    text-align: center;
-    font-weight: 700;
-    margin: 10px 0;
-}
-.pro-col p {
-    color: #fff;
-}
-.pro-col:hover {
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
-} */
-
-
-
 @media (max-width:768px) {
     header {
         height: 100vh;
@@ -261,10 +218,28 @@ header {
     .navbar-nav {
         margin-left: 0;
     }
+    .text-box h1 {
+        font-size: 50px;
+    }
     .bg {
         display: none;
     }
     .row {
         flex-direction: column;
+    }
+    .container p {
+        font-size: 18px;
+    }
+    .pro-col {
+        margin: 5px auto;
+    }
+    .cus-col {
+        margin: 5px auto;
+    }
+    .cta {
+        padding: 150px 0;
+    }
+    .order h5 {
+        font-size: 24px;
     }
 }
