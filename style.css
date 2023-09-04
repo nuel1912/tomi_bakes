@@ -195,6 +195,7 @@ header {
 }
 .row {
     margin: 5px 0;
+    display: flex;
 }
 .pro-col {
     margin: 5px 10px;
@@ -258,11 +259,53 @@ header {
     font-weight: 600;
 }
 
+footer {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
 .foot {
+    /* width: 90%; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.foot-col {
+    margin: 20px 25px;
+    text-align: center;
+    color: #451400;
+    position: relative;
+    font-family: 'Comic Neue', cursive;
+}
+.foot-col h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.foot-col .ft {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 50px;
+    /* align-self: center; */
+    /* transform: translateY(-500px); */
+}
+.foot-col p {
+    font-size: 14px;
+    margin: 5px auto;
+    font-weight: 500;
+}
+.foot-col img {
+    width: 20px;
+    margin: auto 3px;
+    cursor: pointer;
+}
+
+
+/* .foot {
     width: 100%;
     margin: auto;
     text-align: center;
-    /* background-color: #451400; */
+    background-color: #451400;
     padding: 20px 5px;
 }
 .foot h6 {
@@ -273,16 +316,16 @@ header {
 .foot p {
     color: #451400;
     font-weight: 600;
-    /* letter-spacing: 1px; */
-    /* font-size: 18px; */
+    letter-spacing: 1px;
+    font-size: 18px;
 }
-/* .foot .socials {
+.foot .socials {
     display: flex;
-} */
-.socials img {
+}
+.foot-col img {
     width: 20px;
     margin: 10px 3px;
-}   
+} */
 
 
 @media (max-width:768px) {
@@ -328,5 +371,14 @@ header {
     }
     .order h5 {
         font-size: 24px;
+    }
+    .foot {
+        flex-direction: column;
+    }
+    .foot-col .ft {
+        margin: auto;
+    }
+    .foot-col {
+        margin: 10px auto;
     }
 }
