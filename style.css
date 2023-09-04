@@ -19,7 +19,7 @@ hr {
     border: 0;
 }
 nav {
-    background: #F5F5DC;
+    background: #D2B48C;
 }
 .navbar-brand {
     margin: auto 2%;
@@ -46,6 +46,84 @@ header {
     position: relative;
     overflow: hidden;
 }
+.message {
+    width: 90%;
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 20;
+    /* margin: auto; */
+}
+.message h1 {
+    font-size: 100px;
+    margin-bottom: 0 auto 5px;
+    color: #F5F5DC;
+}
+.message hr {
+    width: 100%;
+    height: 2px;
+    margin: 0 auto 5px auto;
+    background: #fff;
+}
+.message input {
+    width: 70%;
+    height: 60px;
+    color: #fff;
+    background: transparent;
+    font-family: 'Comic Neue', cursive;
+    font-size: 18px;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px auto;
+    border: 1px solid #F5F5DC;
+    outline: none;
+}
+.message button {
+    width: 30%;
+    color: #fff;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 12px;
+    margin: 10px auto;
+    border: 1px solid #F5F5DC;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: 1s;
+}
+/* .message button:hover {
+    background: #fff;
+    color: #333;
+    border: none;
+    font-weight: 600;
+} */
+.message button a {
+    font-family: 'Comic Neue', cursive;
+    text-decoration: none;
+    color: #fff;
+}
+.header p {
+    font-family: 'Comic Neue', cursive;
+    font-size: 15px;
+    font-weight: 800;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 15px;
+    z-index: 20;
+    width: 100%;
+}
+
+
 /* .part {
     width: 90%;
     margin: auto;
@@ -214,6 +292,15 @@ header {
         background-image: url(img/cake.jpg);
         background-position: center;
         background-size: cover;
+    }
+    .message h1 {
+        font-size: 50px;
+    }
+    .message input {
+        width: 100%;
+    }
+    .message button {
+        width: 70%;
     }
     .navbar-nav {
         margin-left: 0;
