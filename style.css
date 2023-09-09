@@ -24,6 +24,9 @@ nav {
 .navbar-brand {
     margin: auto 2%;
 }
+.navbar-brand img {
+    width: 40px;
+}
 /* .nav-link {
     color: #5c1600;
 } */
@@ -46,6 +49,19 @@ header {
     position: relative;
     overflow: hidden;
 }
+.tb {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 50%;
+    border: 1px solid #D2B48C;
+    left: 50%;
+}
+.tb img {
+    width: 40px;
+}
 .message {
     width: 90%;
     max-width: 650px;
@@ -60,18 +76,18 @@ header {
 .message h1 {
     font-size: 100px;
     margin-bottom: 0 auto 5px;
-    color: #F5F5DC;
+    color: #D2B48C;
 }
 .message hr {
     width: 100%;
     height: 2px;
     margin: 0 auto 5px auto;
-    background: #fff;
+    background: #D2B48C;
 }
 .message input {
     width: 70%;
     height: 60px;
-    color: #fff;
+    color: #F5F5DC;
     background: transparent;
     font-family: 'Comic Neue', cursive;
     font-size: 18px;
@@ -79,16 +95,17 @@ header {
     border-radius: 15px;
     padding: 15px;
     margin: 10px auto;
-    border: 1px solid #F5F5DC;
+    border: 1px solid #D2B48C;
     outline: none;
 }
 .message button {
+    font-family: 'Comic Neue', cursive;
     width: 30%;
-    color: #fff;
+    color: #D2B48C;
     background: transparent;
     font-size: 18px;
     font-weight: 500;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     padding: 12px;
     margin: 10px auto;
     border: 1px solid #F5F5DC;
@@ -97,32 +114,34 @@ header {
     cursor: pointer;
     transition: 1s;
 }
-/* .message button:hover {
-    background: #fff;
-    color: #333;
+.message button:hover {
+    background: #D2B48C;
+    color: #451400;
     border: none;
     font-weight: 600;
-} */
+}
 .message button a {
     font-family: 'Comic Neue', cursive;
     text-decoration: none;
-    color: #fff;
+    color: #D2B48C;
 }
 .header p {
     font-family: 'Comic Neue', cursive;
     font-size: 15px;
     font-weight: 800;
-    color: #fff;
+    color: #D2B48C;
     position: absolute;
     text-align: center;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    margin-bottom: 15px;
-    z-index: 20;
+    margin-bottom: 25px;
+    z-index: 1;
     width: 100%;
 }
-
+::placeholder {
+    color: #bba;
+}
 
 /* .part {
     width: 90%;
@@ -173,6 +192,10 @@ header {
     color: #451400;
     background: #D2B48C;
 }
+.bg {
+    transform: translateY(-100px);
+    z-index: -1;
+}
 
 .container {
     width: 90%;
@@ -211,6 +234,7 @@ header {
     background: rgba(69,20,0,0.2);
     padding: 20px;
     display: flex;
+    /* position: relative; */
 }
 .cus-col .peeps {
     height: 40px;
@@ -227,6 +251,13 @@ header {
 .cus-col p {
     font-size: 14px;
     padding: 0;
+}
+/* .rating {
+    position: relative;
+} */
+.rating .down {
+    position: relative;
+    bottom: 2px;
 }
 .rating img {
     width: 15px;
@@ -283,9 +314,10 @@ footer {
     margin-bottom: 10px;
 }
 .foot-col .ft {
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 50px;
+    /* font-size: 30px;
+    font-weight: 700; */
+    margin-top: 40px;
+    width: 80px;
     /* align-self: center; */
     /* transform: translateY(-500px); */
 }
@@ -351,7 +383,7 @@ footer {
     .text-box h1 {
         font-size: 50px;
     }
-    .bg {
+    .bg, .bg2 {
         display: none;
     }
     .row {
