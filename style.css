@@ -103,30 +103,32 @@ header {
 .message button {
     /* font-family: 'Comic Neue', cursive; */
     width: 30%;
-    color: #D2B48C;
-    background: transparent;
+    color: #451400;
+    background: #D2B48C;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
     padding: 12px;
     margin: 10px auto;
-    border: 1px solid #D2B48C;
+    border: 1px solid #451400;
     border-radius: 15px;
     outline: none;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
 }
-.message button:hover {
+.message button a {
+    text-decoration: none;
+    color: #451400;
+}
+/* .message button:hover {
     background: #D2B48C;
     color: #451400;
     border: none;
     font-weight: 600;
 }
-.message button a {
-    /* font-family: 'Comic Neue', cursive; */
-    text-decoration: none;
-    color: #D2B48C;
-}
+.message button a:hover {
+    color: #451400;
+} */
 .header p {
     /* font-family: 'Comic Neue', cursive; */
     font-size: 15px;
