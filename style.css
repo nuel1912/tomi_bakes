@@ -232,13 +232,15 @@ header {
     /* background: #641e02; */
 }
 .cus-col {
+    width: 100%;
+    min-height: 25vh;
     border-radius: 10px;
     margin: 5px;
     text-align: left;
     background: rgba(69,20,0,0.2);
     padding: 20px;
     display: flex;
-    /* position: relative; */
+    position: relative;
 }
 .cus-col .peeps {
     height: 40px;
@@ -251,6 +253,7 @@ header {
     font-size: 16px;
     font-weight: 600;
     margin-top: 15px;
+    margin-bottom: 5px;
 }
 .cus-col p {
     font-size: 14px;
@@ -259,9 +262,9 @@ header {
 /* .rating {
     position: relative;
 } */
-.rating .down {
-    position: relative;
-    bottom: 2px;
+.down {
+    position: absolute;
+    bottom: 15px;
 }
 .rating img {
     width: 15px;
@@ -279,10 +282,10 @@ header {
     position: relative;
 }
 .cta .order {
-    /* position: absolute;
+    position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     width: 80%;
     margin: auto;
 }
@@ -401,9 +404,10 @@ footer {
     }
     .cus-col {
         margin: 5px auto;
+        min-height: 30vh;
     }
     .cta {
-        padding: 150px 0;
+        /* padding: 150px 0; */
     }
     .order h5 {
         font-size: 24px;
