@@ -57,7 +57,9 @@ header {
     margin-top: 25px;
     border-radius: 50%;
     border: 1px solid #D2B48C;
+    top: 0;
     left: 50%;
+    transform: translate(-50%, 0);
 }
 .tb img {
     width: 40px;
@@ -89,7 +91,7 @@ header {
     height: 60px;
     color: #F5F5DC;
     background: transparent;
-    font-family: 'Comic Neue', cursive;
+    /* font-family: 'Comic Neue', cursive; */
     font-size: 18px;
     font-size: 16px;
     border-radius: 15px;
@@ -99,7 +101,7 @@ header {
     outline: none;
 }
 .message button {
-    font-family: 'Comic Neue', cursive;
+    /* font-family: 'Comic Neue', cursive; */
     width: 30%;
     color: #D2B48C;
     background: transparent;
@@ -108,7 +110,7 @@ header {
     letter-spacing: 1px;
     padding: 12px;
     margin: 10px auto;
-    border: 1px solid #F5F5DC;
+    border: 1px solid #D2B48C;
     border-radius: 15px;
     outline: none;
     cursor: pointer;
@@ -121,12 +123,12 @@ header {
     font-weight: 600;
 }
 .message button a {
-    font-family: 'Comic Neue', cursive;
+    /* font-family: 'Comic Neue', cursive; */
     text-decoration: none;
     color: #D2B48C;
 }
 .header p {
-    font-family: 'Comic Neue', cursive;
+    /* font-family: 'Comic Neue', cursive; */
     font-size: 15px;
     font-weight: 800;
     color: #D2B48C;
